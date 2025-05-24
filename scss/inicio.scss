@@ -7,19 +7,64 @@ $color-negro: #000;
   padding: 0;
 }
 
-nav {
-  background-color: #333;
+nav ul {
+  list-style: none;
+ 
   display: flex;
-  justify-content: flex-end;
-  ul {
-    list-style: none;
-    margin: 5%;
-    padding: 0;
-    display: flex;
+  justify-content: flex-end; 
+  background-color: #333; 
+  padding: 20px; 
+
+  li.nav {
+    margin-right: 20px; 
+
+   
+    .item {
+      text-decoration: none; 
+      color: blueviolet;
+    }
   }
-  a {
+}
+
+body{
+  margin: 0;
+  padding: 0%;
+  background-color: #000;
+}
+
+.texto{
+  color: blueviolet;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+ 
+}
+ 
+.imagen-inicio img{
+   height: 50%;
+   width: 40%;
+     display: block;
+     border-radius: 8px;
+  
+}
+
+footer {
+  clear: both;
+  background-color: #333;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+.contacto p{
+  a{
     text-decoration: none;
-    color: #fff;
-    padding: 10px;
+    color: blueviolet;
   }
+
+}
+.redes {
+  a{
+    color: blueviolet;
+  text-decoration: none;
+}
 }
