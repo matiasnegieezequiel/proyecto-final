@@ -1,0 +1,54 @@
+// Variables
+$color-gris: #333;
+$color-negro: #000;
+
+
+
+.texto{
+  color: blueviolet;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  ul{
+  list-style-type: none;
+ }
+}
+ 
+.imagen-inicio img{
+   height: 50%;
+   width: 40%;
+     display: block;
+     border-radius: 8px;
+  
+}
+
+
+// Media query para celus grandes  oh tables
+@media (max-width: 768px) {
+  .texto {
+    position: relative; 
+    top: auto;
+    left: auto;
+    text-align: center; 
+  }
+
+  .imagen-inicio img {
+    height: 80%; 
+    width: 70%;
+    margin: 20px auto; 
+  }
+}
+
+// Media query celus 
+@media (max-width: 480px) {
+  .texto {
+    font-size: 16px; 
+  }
+
+  .imagen-inicio img {
+    height: 100%; 
+    width: 90%;
+  }
+}
+
+

@@ -1,8 +1,11 @@
 // estilos.scss
-@use 'inicio';
+// scss/estilos.scss
+@use 'partials/inicio';
+@use 'partials/contacto';
+@use 'partials/musica';
+@use 'partials/streming';
+@use 'partials/video';
+@use 'partials/footer';
+@use 'partials/nav';
+@use 'partials/resetybody';
 
-@use 'musica';
-@use 'streming';
-@use 'video';
-// styles.scss
-@use 'nav';

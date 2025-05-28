@@ -1,0 +1,44 @@
+.contenedor-videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+ 
+
+}
+
+.video iframe {
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+// Media query para tabletas
+@media (max-width: 1024px) {
+  .contenedor-videos {
+    grid-template-columns: repeat(2, 1fr); // Cambia a 2 columnas en tabletas
+  }
+}
+
+// Media query para tables
+@media (max-width: 768px) {
+  .contenedor-videos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .video iframe {
+    height: 150px; 
+  }
+}
+
+// Media query para celus
+@media (max-width: 480px) {
+  .contenedor-videos {
+    gap: 10px; 
+  }
+
+  .video iframe {
+    height: 120px;
+  }
+}

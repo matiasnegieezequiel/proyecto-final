@@ -1,0 +1,164 @@
+
+#musica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  .info-artista {
+    text-align: center;
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    p {
+      font-size: 18px;
+      color: #ccc;
+    }
+  }
+
+  .discografia {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 20px;
+
+        h3 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: #fff;
+        }
+
+        p {
+          font-size: 16px;
+          color: #ccc;
+        }
+
+        .spotify {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .videos-musicales {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+  .noticias {
+    width: 100%;
+    max-width: 800px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 20px;
+
+        h2 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-bottom: 5px;
+          color: #fff;
+        }
+
+        p {
+          font-size: 16px;
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+.noticias a {
+  text-decoration: none;
+}
+
+
+// Media query para tablets
+  @media (max-width: 1024px) {
+    .discografia, .videos-musicales, .noticias {
+      max-width: 90%;
+    }
+  }
+
+  // Media query para celus
+  @media (max-width: 768px) {
+    .info-artista {
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    .discografia, .videos-musicales, .noticias {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+
+    video {
+      height: auto;
+      max-height: 300px;
+    }
+  }
+
+  // Media query para celulares pequeños
+  @media (max-width: 480px) {
+    .info-artista {
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    .discografia, .videos-musicales, .noticias {
+      padding: 0 10px;
+    }
+
+    video {
+      max-height: 200px;
+    }
+  }

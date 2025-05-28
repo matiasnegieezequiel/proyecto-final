@@ -1,17 +1,374 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 8 | @use 'nav';
- *   | ^^^^^^^^^^
- *   '
- *   scss\estilos.scss 8:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 8 \2502  @use 'nav';\a   \2502  ^^^^^^^^^^\a   \2575 \a   scss\\estilos.scss 8:1  root stylesheet";
+.texto {
+  color: blueviolet;
+  position: absolute;
+  top: 20%;
+  left: 50%;
 }
+.texto ul {
+  list-style-type: none;
+}
+
+.imagen-inicio img {
+  height: 50%;
+  width: 40%;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .texto {
+    position: relative;
+    top: auto;
+    left: auto;
+    text-align: center;
+  }
+  .imagen-inicio img {
+    height: 80%;
+    width: 70%;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 480px) {
+  .texto {
+    font-size: 16px;
+  }
+  .imagen-inicio img {
+    height: 100%;
+    width: 90%;
+  }
+}
+.carousel-item img {
+  height: 500px;
+  object-fit: contain;
+}
+
+form {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+form input[type=text], form input[type=email] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form input[type=submit] {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form input[type=submit]:hover {
+  background-color: #3e8e41;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-item img {
+    height: 300px;
+  }
+}
+@media (max-width: 768px) {
+  form {
+    max-width: 90%;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  form {
+    max-width: 100%;
+    padding: 5px;
+  }
+  input[type=text], input[type=email], textarea {
+    height: 30px;
+    padding: 5px;
+  }
+  input[type=submit] {
+    height: 30px;
+    padding: 5px;
+  }
+}
+#musica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+#musica .info-artista {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#musica .info-artista h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#musica .info-artista p {
+  font-size: 18px;
+  color: #ccc;
+}
+#musica .discografia {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+#musica .discografia h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#musica .discografia ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#musica .discografia ul li {
+  margin-bottom: 20px;
+}
+#musica .discografia ul li h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+#musica .discografia ul li p {
+  font-size: 16px;
+  color: #ccc;
+}
+#musica .discografia ul li .spotify {
+  margin-top: 10px;
+}
+#musica .videos-musicales {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+#musica .videos-musicales h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#musica .videos-musicales video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+#musica .noticias {
+  width: 100%;
+  max-width: 800px;
+}
+#musica .noticias h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#musica .noticias ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#musica .noticias ul li {
+  margin-bottom: 20px;
+}
+#musica .noticias ul li h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+#musica .noticias ul li p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.noticias a {
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .discografia, .videos-musicales, .noticias {
+    max-width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .info-artista h1 {
+    font-size: 28px;
+  }
+  .discografia, .videos-musicales, .noticias {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  video {
+    height: auto;
+    max-height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .info-artista h1 {
+    font-size: 24px;
+  }
+  .discografia, .videos-musicales, .noticias {
+    padding: 0 10px;
+  }
+  video {
+    max-height: 200px;
+  }
+}
+section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #7A288A;
+  text-align: center;
+}
+section p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #C7B8EA;
+}
+section a {
+  text-decoration: none;
+  color: #7A288A;
+}
+section a:hover {
+  color: #C7B8EA;
+}
+section iframe {
+  border: none;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 28px;
+  }
+  section iframe {
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  section h1 {
+    font-size: 24px;
+  }
+  section p {
+    font-size: 16px;
+  }
+  section iframe {
+    height: 200px;
+  }
+}
+.contenedor-videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.video iframe {
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .contenedor-videos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-videos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .video iframe {
+    height: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .contenedor-videos {
+    gap: 10px;
+  }
+  .video iframe {
+    height: 120px;
+  }
+}
+footer {
+  clear: both;
+  background-color: #333;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
+
+.redes ul {
+  list-style: none;
+}
+.redes a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.contacto p a {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #333;
+  padding: 20px;
+}
+nav ul li.nav {
+  margin-right: 20px;
+}
+nav ul li.nav .item {
+  text-decoration: none;
+  color: blueviolet;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0%;
+  background-color: #000;
+}
+
+/*# sourceMappingURL=estilos.css.map */
